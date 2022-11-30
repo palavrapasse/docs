@@ -13,7 +13,7 @@ This file keeps track of all entities the system processes.
 |Exposure Date|`Leak`|
 |Affected Systems|`Leak`|
 
-In the future, we would like to support more PII entities, to enrich the system value.
+In the future, we would like to support more PII entities, to enrich the product/system value.
 
 ## Relationships
 
