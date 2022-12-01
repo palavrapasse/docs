@@ -6,14 +6,6 @@ This file keeps track of all cross-cutting concerns we took in consideration whi
 
 Our top priorities for the system is that it is fast, is able to be embedded in small boards (e.g., `Raspberry Pi`), and of course that is secure of nasty attackers. Taking this in consideration, the following concerns arise:
 
-- Performance
-- Security
-- Networking
-- Size
-- API Protection
-- RCE Protection
-- SQLI Protection
-
 ## Performance
 
 Performance is a top concern in any system and is hard to define metrics on what's performant or not. For now, we consider our system performant if API queries replies take up to a maximum of **~3** seconds. To make this possible, we are relying on fast technologies as the base layer for performance:
