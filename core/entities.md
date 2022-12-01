@@ -11,7 +11,8 @@ This file keeps track of all entities the system processes.
 |Context|`Leak`|
 |Affected Users (Count)|`Leak`|
 |Exposure Date|`Leak`|
-|Affected Systems|`Leak`|
+|Affected Platforms|`Leak`|
+|Bad Actor|`Leak`|
 
 In the future, we would like to support more PII entities, to enrich the product/system value.
 
