@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS "User" (
+    "userid" INTEGER PRIMARY KEY,
+    "email" VARCHAR(130) NOT NULL UNIQUE
+);

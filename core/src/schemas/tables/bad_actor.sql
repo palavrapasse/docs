@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS "BadActor" (
+    "baid" INTEGER PRIMARY KEY,
+    "identifier" VARCHAR(30) NOT NULL UNIQUE
+);
