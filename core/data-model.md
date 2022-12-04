@@ -12,5 +12,6 @@ Some design reasons we considered:
 - Most many-to-many relationships defined in the domain model have a separate association table. The only exception is `Leak-Password`, since that relationship is already inferred by `LeakUser` table (`SELECT C.* FROM Credentials C, UserCredentials UC, LeakUser LU WHERE LU.leakid = <leakid> AND LU.userid = UC.userid AND UC.credid = C.credid`). Instead, there will be a view to represent the `LeakPassword` table.
 - `Affected Users` entity will be a view for fast access.
 
+Note: We refer to generating the next available unique integer as `autogen` in the data model diagram, for primary key definition. Do not confuse with `AUTOINCREMENT` keyword from SQLite, we don't use it.
 
 ![entity relationship model describing database schema](src/002-data-model.drawio.svg)
