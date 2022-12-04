@@ -29,7 +29,7 @@ For API protection, we will implement logical conditions that constrain access t
 
 ## Size Costs
 
-Our database will contain a lot of leaks, so as expected, our database will be huge and will grow linearly. To reduce its size, we need to apply size reduction mechanisms. For now, we are using long integer incremental keys as the tables primary keys instead of domain identity keys, since we will need to reference them on multiple tables. Although being an extra key in the database, this will help reduce its size since a long integer is always `8 bytes`, but an identity key is almost never equal to or less than 8 bytes (e.g., emails).
+Our database will contain a lot of leaks, so as expected, our database will be huge and will grow linearly. To reduce its size, we need to apply size reduction mechanisms. For now, we are using long integer incremental keys as the tables primary keys instead of domain identity keys, since we will need to reference them on multiple tables. Although being an extra key in the database, this will help reduce its size since a long integer is always `8 bytes`, but an identity key is almost never equal to or less than 8 bytes (e.g., emails). Please refer to [data-model](data-model.md) document for all major design decisions considered.
 
 ## Networking
 
