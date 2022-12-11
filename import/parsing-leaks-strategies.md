@@ -1,6 +1,8 @@
-## parsing leaks strategies
+# parsing-leaks-strategies
 
-**Inputs**
+This file describes the parsing strategies, such as the file schemas and the rules to clean up the input data before inserting it into the database.
+
+---
 
 For now we accept the following file schemas in our import tool: 
 
