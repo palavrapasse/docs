@@ -4,7 +4,7 @@ This file describes all of the coding conventions we adopted in order to make ou
 
 ---
 
-**For naming [1] [2] [4]**:
+**For naming [1] [2] [4]**
 
 - Be consistent (easy to guess): Receiver names should be consistent across a type's methods;
 - Use short names: Reduce common variables and parameters (when types are descriptive) to one, two or three letters (e.g., `i` - `index`, `k` - `key`, `r` - `reader`);
@@ -19,7 +19,7 @@ This file describes all of the coding conventions we adopted in order to make ou
 - Don't use snake_case;
 - Don't use util, common, shared or lib for package name.
 
-**For style/code organization [2] [4]**:
+**For style/code organization [2] [4]**
 
 - Group similar and related declarations (e.g. `const (a = 1 b = 2)`);
 - Group imports by standard library and everything else;
@@ -46,11 +46,12 @@ This file describes all of the coding conventions we adopted in order to make ou
 - Directories following /cmd/ should match the name of the executable;
 - Directories inside /internal/ can be named as /pkg and /app to separate application and library code.
 
-**For Code safety [4]**:
+**For Code safety [4]**
 
 - Use defer to clean up resources such as files and locks;
 - Don't Panic: the function returns an error and allow the caller to handle it.
 
+Note: We are not Go experts, so take our conventions with a grain of salt. Also, we are daily learning the best workflow in Go codebases, so expect conventions to change from time to time.
 
 ## Sources
 
