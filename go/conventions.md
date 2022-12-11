@@ -28,13 +28,13 @@ This file describes all of the coding conventions we adopted in order to make ou
 - Reduce nesting: handle error cases/special conditions first and return early or continue the loop;
 - Avoid unnecessary else conditions;
 - Use field names to initialize structs and omit zero value fields in structs;
-- Module name must follow the following pattern: `github.com/<org>/<repo>/<module>`
+- Module name must follow the following pattern: `github.com/<org>/<repo>/<module>`.
 
 **For package/project layout [3]**
 
 - Organize by responsibility, not collection: Avoid models, utils, etc;
 - Separate files by responsibility (e.g., http.go, header.go, cookie.go);
-- Top-level package documentation should be written in the `doc.go` file.
+- Top-level package documentation should be written in the `doc.go` file;
 - `/cmd/` directory describes the main executable code for the Go progam. There maybe multiple main executables, and as such they must live inside the appropriate folder (`/cmd/migration/migration.go`);
 - `/internal/` directory describes internal, non-shared code (i.e., private application code);
 - `/pkg/` directory describes shared code externally that other applications can use;
@@ -43,8 +43,8 @@ This file describes all of the coding conventions we adopted in order to make ou
 - `/scripts/` directory describes internal scripts used to automate the application (e.g., build, test, analyse);
 - `/third_party/` directory describes external helper tools binaries, files and forked code;
 - `/api/` directory may exist to describe the HTTP API exposed by the package (e.g., swagger files);
-- Directories following /cmd/ should match the name of the executable;
-- Directories inside /internal/ can be named as /pkg and /app to separate application and library code.
+- Directories following `/cmd/` should match the name of the executable;
+- Directories inside `/internal/` can be named as `/pkg` and `/app` to separate application and library code.
 
 **For Code safety [4]**
 
