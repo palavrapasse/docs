@@ -23,7 +23,7 @@ In the sections above you can find all the use cases that have been noted down a
 
 ## 001 - Check if my credentials are leaked
 
-This use case is self-explanatory: **Given** my e-mail address, I would like to **find** if there are any **credentials** exposed in the database.
+This use case is self-explanatory: Given the user e-mail address, he would like to **check** if there are any **credentials** exposed in the database.
 
 **Inputs**:
 
