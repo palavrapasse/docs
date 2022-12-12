@@ -15,8 +15,8 @@ In the sections above you can find all the use cases that have been noted down a
 |[005 - List all affected platforms](#005---list-all-affected-platforms)|`Query`|N/A|
 |[006 - List most recent affected platforms](#006---list-most-recent-affected-platforms)|`Query`|N/A|
 |[007 - Subscribe to new leaks](#007---subscribe-to-new-leaks)|`Pub/Sub`|N/A|
-|[008 - Subscribe to new leaks that affect me](#008---subscribe-to-new-leaks-that-affect-me)|`Pub/Sub|N/A|
-|[009 - Subscribe to new leaks that affect my friends/family ](#009---subscribe-to-new-leaks-that-affect-my-friendsfamily)|`Pub/Sub|N/A|
+|[008 - Subscribe to new leaks that affect me](#008---subscribe-to-new-leaks-that-affect-me)|`Pub/Sub`|N/A|
+|[009 - Subscribe to new leaks that affect my friends/family ](#009---subscribe-to-new-leaks-that-affect-my-friendsfamily)|`Pub/Sub`|N/A|
 |[010 - Request exposed credentials for my e-mail address](#010---request-exposed-credentials-for-my-e-mail-address)|`Query`|N/A|
 
 
