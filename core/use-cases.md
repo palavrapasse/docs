@@ -1,6 +1,6 @@
 # use-cases
 
-This file keeps track of all use cases our product has in mind. We tend to describe them in both a product and technical level, so anyone can get a clear picture of the needed inputs and expected outputs for each them.
+This file keeps track of all use cases our product has in mind. We tend to describe them on both a product and technical level, so anyone can get a clear picture of the needed inputs and expected outputs for each of them.
 
 ---
 
