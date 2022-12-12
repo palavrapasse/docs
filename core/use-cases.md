@@ -109,7 +109,7 @@ Even if a user finds that he hasn't been affected yet, he would like to be notif
 
 ## 008 - Subscribe to new leaks that affect me
 
-Similar to [use case #007](#007---subscribe-to-new-leaks), but in this scenario the user would only like to be notified if he his affected.
+Similar to [use case #007](#007---subscribe-to-new-leaks), but in this scenario the user would only like to be notified if he is affected.
 
 **Inputs**:
 
