@@ -85,7 +85,7 @@ Similar to [use case #003](#003---list-all-leaks), the user would also like to k
 
 ## 006 - List most recent affected platforms
 
-Similar to [use case #005](#004---list-most-recent-leaks) [#006](#006---list-most-recent-affected-platforms), but sorted by leak exposed date.
+Similar to [use case #004](#004---list-most-recent-leaks) [#005](#005---list-all-affected-platforms), but sorted by leak exposed date.
 
 **Inputs**:
 
