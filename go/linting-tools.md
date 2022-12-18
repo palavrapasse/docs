@@ -4,7 +4,7 @@ This file keeps track of the decisions taken to choose the linting tools for Go 
 
 ---
 
-Linting tools allow developers to enforce their coding guidelines along the codebase during software development. We have defined a set of coding conventions and guidelines, so we must enforce them in all of our Go codebases. Taken this in consideration, after querying Google, using ChatGPT and digging GitHub, we found out:
+Linting tools allow developers to enforce their coding guidelines along the codebase during software development. We have defined a set of coding conventions and guidelines, so we must enforce them in all of our Go codebases. Taking this into consideration, after querying Google, using ChatGPT and digging GitHub, we found out:
 
 - [go-lint](https://github.com/golang/lint): deprecated, but still used internally by Golang
 - [go-vet](https://pkg.go.dev/cmd/vet): successor of go-lint, created and maintained by Go team. Simple, but only supports few linting rules. Does not provide a way to add new rules.
