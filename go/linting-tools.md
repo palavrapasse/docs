@@ -15,7 +15,7 @@ Unfortunately we couldn't find a way to validate codebases module layout/file na
 
 ## Decision
 
-Although we entitle `golangci-lint` as a "bazooka to kill an ant", we will go forward with it as the linting tool for Go codebases. It's just so extra configurable, we simply can't miss to use it. The con of using it is having to deal with multiple linting tools analysing the codebase at the same time, leading to increase of CPU usage and Disk I/O.
+Although we entitle `golangci-lint` as a "bazooka to kill an ant", we will go forward with it as the linting tool for Go codebases. It's just so extra configurable, we simply can't miss using it. The con of using it is having to deal with multiple linting tools analysing the codebase at the same time, leading to an increase in CPU usage and Disk I/O.
 
 Our conventions as linting rules, as well as the tool configuration, can be found in the [.golangci.yaml](src/.golangci.yaml) file.
 
