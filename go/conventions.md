@@ -12,7 +12,8 @@ This file describes all of the coding conventions we adopted in order to make ou
 - Use PascalCase for functions, types, interfaces (e.g., PrimeSearch);
 - Use camelCase for local variables, parameters (e.g., sortedList);
 - Use CAPITALCASE for acronyms (e.g., HTTP, ID);
-- Use lowercase for packages and avoid using plural form;
+- Use lowercase for packages;
+- Avoid using plural form in packges and files;
 - Use Error as a suffix when defining error types (e.g., CredentialsError);
 - Use err as a prefix when declaring error variables (e.g., errCredentials);
 - Use _ as a prefix when declaring top-level vars and consts (e.g., _defaultPort);
