@@ -24,7 +24,7 @@ Our conventions as linting rules, as well as the tool configuration, can be foun
 Using `golangci-lint` is as simple as:
 
 ```bash
-golangci-lint run .
+golangci-lint run ./...
 ```
 
 ## Continuous Linting
