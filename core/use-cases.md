@@ -114,6 +114,7 @@ Similar to [use case #007](#007---subscribe-to-new-leaks), but in this scenario 
 **Inputs**:
 
 - 1x E-mail address
+- 1x E-mail address to be found affected
 
 **Outputs**:
 
