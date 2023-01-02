@@ -10,3 +10,4 @@ We use the OpenAPI Specification (Version 3.0.3) to describe and document all We
 
 - [santos](src/schemas/api/santos.yaml)
 - [query](src/schemas/api/query.yaml)
+- [subscribe](src/schemas/api/subscribe.yaml)
