@@ -10,7 +10,7 @@ This file provides an overview of all the components the system composes and how
 |santos|`Web Service`|Web API that serves the backend to the frontend. Primary level API that protects second level APIs of being exposed to attackers. A "Backend for Frontend" (BFF) service|
 |query|`Web Service`|Query service that processes read/query operations requests|
 |subscribe|`Web Service`|Command service that processes subscribe operations requests|
-|fernando|`Web Service`|Command service that sends e-mails on request|
+|paulo|`Web Service`|Command service that sends e-mails on request|
 |import|`Tool`|Tool that imports leaks files, performs sanitization and inserts them in the database|
 |LeaksDB|`Database`|Our beloved SQLite database that hoards leaks data|
 |GitHub Pages|`CDN`|We use it to serve our webapp in a free manner, since it's a static website|

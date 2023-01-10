@@ -135,11 +135,11 @@ components:
       type: object
       properties:
         notifyEmail: 
-          type: string
+            $ref: '#/components/schemas/Email'
         affectedEmails:
           type: array
           items:
-            type: string
+            $ref: '#/components/schemas/Email'
   requestBodies:
     SubscriptionConfirmation:
       description: Subscription confirmation
