@@ -7,29 +7,26 @@ This file describes the different leak discovery mechanisms analysed, and the me
 
 ## Trigger/Notification from Database
 
-The first approach analysed was the notification when the database changed. With this, we discovered the concept of 'Data Change Notification' (DCN), so a client can register for changes, and when these happen, the database notifies the client.
+The first approach analysed was the notification when the database changed. With this, we discovered the concept of `Data Change Notification` (DCN), so clients can receive notifications when a table is updated.
 
 The SQLite provides a function that supports the DCN. It registers a callback function with the database connection to be invoked whenever a row is updated, inserted or deleted in a rowid table [1]. 
 The callbacks are installed per connection and only react to operations performed on the same connection [2].
 
-With this being said, this approach does not fit what we want since the application that does the changes (**import**) is not the same as the application to get notified (**subscribe**). 
-
+With this being said, this approach does not fit what we want since the tool that changes the database (**import**) is not the same as the application that wants to be notified (**subscribe**). 
 
 ## Polling information from Database
 
-The second approach analysed was the polling of information from the database. In other words, the **subscribe** service will from time to time call the database to get the new leaks.
+The second approach analysed was the polling of information from the database. In other words, **subscribe** service will from time to time call the database to get the new leaks.
 
-For this approach, we would need to start storing the date of the import, so the **subscribe** will only get from the database the leaks inserted since the last search.
-
+For this approach, we would need to start storing the date of the import, so **subscribe** will only get from the database the leaks inserted since the last search.
 
 ## Notification from import
 
-Lastly, we thought of the **import** notifying the **subscribe** of the new leak inserted. For instance, after the **import** stores the new leak information, it notifies the **subscribe** of the new leak (providing the id for instance), so the **subscribe** can then validate if the emails that have subscriptions were affected by the new leak.
-
+Lastly, we thought of **import** notifying **subscribe** of the new leak inserted. For instance, after **import** stores a new leak, it notifies **subscribe** of the new leak (providing the inserted leak id), so **subscribe** can then validate if the emails that have subscriptions were affected by the new leak.
 
 ## Conclusions
 
-The last approach (Notification from import) is the one we choose to implement.
+The last approach is the one we choose to implement.
 
 The first was not considered as explained before. Between the second and third approaches we choose the last because we believe this is the best one at this moment. 
 
