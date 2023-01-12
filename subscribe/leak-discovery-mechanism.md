@@ -4,7 +4,6 @@ This file describes the different leak discovery mechanisms analysed, and the me
 
 ---
 
-
 ## Trigger/Notification from Database
 
 The first approach analysed was the notification when the database changed. With this, we discovered the concept of `Data Change Notification` (DCN), so clients can receive notifications when a table is updated.
