@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS "Subscriber" (
+    "subid" INTEGER PRIMARY KEY,
+    "email" VARCHAR(130) NOT NULL UNIQUE
+);
