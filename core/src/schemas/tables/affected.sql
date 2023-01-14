@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS "Affected" (
+    "affid" INTEGER PRIMARY KEY,
+    "hsha256email" VARCHAR(130) NOT NULL UNIQUE
+);

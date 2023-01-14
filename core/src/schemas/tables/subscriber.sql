@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS "Subscriber" (
+    "subid" INTEGER PRIMARY KEY,
+    "b64email" VARCHAR NOT NULL UNIQUE
+)
