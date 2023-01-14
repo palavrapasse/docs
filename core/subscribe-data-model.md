@@ -1,6 +1,6 @@
 # subscribe-data-model
 
-This file describes the relational data model that represents the system entities in the database of **subscribe** service.
+This file describes the relational data model that represents the **subscribe** service entities in the database.
 
 ---
 
