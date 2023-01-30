@@ -1,6 +1,6 @@
 # throttle
 
-This file keeps track of the decisions taken related to request throttling imposed on 1st level APIs, in order to prevent excess network requests and application level **DDoS** attacks. The table below describes the conditions and maximum number of requests per time period for each API endpoint.
+This file keeps track of the decisions taken related to request throttling imposed on 1st level APIs, in order to prevent excess network requests and application level **DDoS** attacks. The table below describes the conditions and the maximum number of requests per time period for each API endpoint.
 
 ---
 
