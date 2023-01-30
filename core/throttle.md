@@ -10,4 +10,4 @@ This file keeps track of the decisions taken related to request throttling impos
 |`leaks/subscribe`|`POST`|**1**|*5 seconds*|IP address|
 |`platforms`|`GET`|**3**|*5 seconds*|IP address|
 
-Note: If an user exceeds the maximum number of conditions based on the endpoint criteria, it will be throttled for **30** seconds and subsequent API calls will respond with `429` status code. Also, any user that performs more than **50** requests in any endpoint per time period will have his IP blocked in the API server.
+Note: If a user exceeds the maximum number of conditions based on the endpoint criteria, it will be throttled for **30** seconds, and subsequent API calls will respond with a `429 Too Many Requests` status code. Also, any user that performs more than **50** requests in any endpoint per time period will have his IP blocked in the API server.
