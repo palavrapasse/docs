@@ -16,3 +16,7 @@ Service monitoring tools allow developers to track the performance and how the s
 
 _*Prometheus and Grafana are usually used together._
 
+
+## Decision
+
+We choose the Prometheus and Grafana tools. Even though they can be complex to configure, [echo (library used in the web services projects) supports the generation of metrics for Prometheus](https://echo.labstack.com/middleware/prometheus/). Another pro is that both tools have a big community for support.
