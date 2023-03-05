@@ -1,4 +1,0 @@
-CREATE TABLE IF NOT EXISTS "Credentials" (
-    "credid" INTEGER PRIMARY KEY,
-    "password" VARCHAR NOT NULL UNIQUE
-);
