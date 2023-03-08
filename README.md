@@ -9,7 +9,6 @@ This section details the core decisions and information related to the project.
 - [Data model](core/data-model.md)
 - [Entities](core/entities.md)
 - [Service monitoring tools](core/service-monitoring-tools.md)
-- [Subscribe data model](core/subscribe-data-model.md)
 - [System communication](core/system-communication.md)
 - [Throttle](core/throttle.md)
 - [Use cases](core/use-cases.md)
@@ -23,16 +22,17 @@ This section details the code conventions and linting tool for Go codebases.
 
 ## import
 
-This section details important information related to the import service.
+This section details relevant information related to the import service.
 
 - [Default information](import/default-information.md)
 - [Parsing leaks strategies](import/parsing-leaks-strategies.md)
 
 ## subscribe
 
-This section details important information related to the subscribe service.
+This section details relevant information related to the subscribe service.
 
 - [Leak discovery mechanism](subscribe/leak-discovery-mechanism.md)
+- [Subscribe data model](subscribe/subscribe-data-model.md)
 
 ## svelte
 
