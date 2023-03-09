@@ -1,8 +1,10 @@
 # docs
 
+This repository contains all documents we have been creating while developing palavrapasse. Here you can find all information about design decisions, schemas and language/tool specific files.
+
 ## core
 
-This section details the core decisions and information related to the project.
+This section details the core decisions and technical information related to the product.
 
 - [API](core/api.md)
 - [Cross cutting concerns](core/cross-cutting-concerns.md)
