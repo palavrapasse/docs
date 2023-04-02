@@ -1,6 +1,6 @@
 # conventions
 
-This file describes all of the coding conventions we adopted in order to make our Go codebases consistent, friendly to read and easy to maintain. Remembering all of them is hard and it is the purpose of linting tools to verify during development, not humans. As such, in [linting_rules.yaml](src/linting_rules.yaml) file you can find the mentioned conventions as linting rules for [golangci-lint](https://golangci-lint.run).
+This file describes all of the coding conventions we adopted in order to make our Go codebases consistent, friendly to read and easy to maintain. Remembering all of them is hard and it is the purpose of linting tools to verify during development, not humans. As such, in [linting_rules.yaml](linting-tools.md) file you can find the mentioned conventions as linting rules for [golangci-lint](https://golangci-lint.run).
 
 ---
 
