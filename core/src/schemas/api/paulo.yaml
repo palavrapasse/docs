@@ -1,0 +1,65 @@
+openapi: 3.0.3
+info:
+  title: Specification of the web API that allow users to send emails
+  description: |-
+    Service that processes email operations requests.
+    
+    Some useful links:
+    - [Use Cases](https://github.com/palavrapasse/docs/blob/master/core/use-cases.md)
+    - [Entities](https://github.com/palavrapasse/docs/blob/master/core/entities.md)
+    - [Data Model](https://github.com/palavrapasse/docs/blob/master/core/data-model.md)
+  license:
+    name: MIT License
+    url: https://github.com/palavrapasse/paulo/blob/master/LICENSE
+  version: 0.0.1
+tags:
+  - name: send
+    description: Send emails endpoints
+paths:
+  /send:
+    post:
+      tags:
+        - send
+      summary: Send of emails
+      operationId: subscribe
+      requestBody:
+        description: Send of emails
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Message'
+        required: true
+      responses:
+        '202':
+          description: send email processing
+components:
+  schemas:
+    Email:
+      type: string
+      format: email
+      example: "test@email.com"
+    Params:
+      required:
+        - template
+      type: object
+      example: {"topic":"fashion"}
+    Template:
+      required:
+        - id
+        - params
+      type: object
+      properties:
+        id: 
+          type: string
+          example: "marketing"
+        params:
+          $ref: '#/components/schemas/Params'
+    Message:
+      required:
+        - template
+      type: object
+      properties:
+        template: 
+            $ref: '#/components/schemas/Template'
+        recipient: 
+            $ref: '#/components/schemas/Email'
