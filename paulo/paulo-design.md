@@ -1,5 +1,7 @@
 # paulo-design
 
+This file track of the design decision we made for the paulo.
+
 ---
 
 ## Serverless Paulo
@@ -36,6 +38,5 @@ Even with having more than one Gmail account, we cannot overlap the limit of e-m
 Every day we need to change the number of e-mails sent in the day to 0, and we have a job for that, the [resetter job](paulo-jobs.md#resetter).
 
 Following is a class diagram to facilitate the undertanting of the concepts of this service:
-
 
 ![entity relationship model describing database schema](src/paulo-class-diagram.drawio.svg)
