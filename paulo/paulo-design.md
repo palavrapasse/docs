@@ -34,3 +34,8 @@ It is fundamental that the number of e-mails sent in the day is not lost wheneve
 Even with having more than one Gmail account, we cannot overlap the limit of e-mails, so we must stop sending e-mails when this value is achieved. To not 'lost' e-mails that should have been sent we will store them and try to resend them later. This will be the responsibility of the [sender job](paulo-jobs.md#sender).
 
 Every day we need to change the number of e-mails sent in the day to 0, and we have a job for that, the [resetter job](paulo-jobs.md#resetter).
+
+Following is a class diagram to facilitate the undertanting of the concepts of this service:
+
+
+![entity relationship model describing database schema](src/paulo-class-diagram.drawio.svg)
