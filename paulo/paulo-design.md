@@ -4,7 +4,7 @@
 
 ## Serverless Paulo
 
-The main goal of the paulo service is to send e-mails.
+The main goal of paulo is to send e-mails.
 
 We first decided to make paulo serverless as a **cloud function**. The reasons for that are:
 
@@ -24,3 +24,13 @@ With this being said, we changed the approach and decided that would be better t
 ---
 
 ## Server Paulo
+
+The main goal of paulo is to send e-mails, as mentioned before, however, Gmail establishes a [limit of e-mails](https://support.google.com/a/answer/166852?hl=en#zippy=) that can be sent per day (`500`).
+
+To be able to send more e-mails per day we will support having more than one Gmail account. For each Gmail account, we will set a maximum of e-mails that can be sent and keep track of the number of e-mails sent in the day.
+
+It is fundamental that the number of e-mails sent in the day is not lost whenever the service is restarted. In other words, this value should not only be stored in memory.
+
+Even with having more than one Gmail account, we cannot overlap the limit of e-mails, so we must stop sending e-mails when this value is achieved. To not 'lost' e-mails that should have been sent we will store them and try to resend them later. This will be the responsibility of the [sender job](paulo-jobs.md#sender).
+
+Every day we need to change the number of e-mails sent in the day to 0, and we have a job for that, the [resetter job](paulo-jobs.md#resetter).
